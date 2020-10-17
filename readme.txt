@@ -1,2 +1,1 @@
-Sample Rate is the problem !
-model should change :)
+Use the same approach of the article for the new dataset, with the modification of the report. 

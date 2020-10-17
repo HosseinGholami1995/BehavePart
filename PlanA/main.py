@@ -5,9 +5,9 @@ from queue import Queue
 
 
 class Node:
-    que={   226*40:Queue(),
-            186*40:Queue(),
-            126*40:Queue()  }
+    que={   226/2:Queue(),
+            186/2:Queue(),
+            126/2:Queue()  }
         
     def __init__(self,driver_id):
         self.id=driver_id
@@ -21,6 +21,6 @@ class Node:
             tc = Thread(target = Event_Handler, args =(id_,que[window],Get_function()[window])) 
             tc.start()
 
-a=Node(31)
+a=Node(19)
 a.start()
 # m=[(len(x),i) for i ,x in enumerate(Sensory_data)]

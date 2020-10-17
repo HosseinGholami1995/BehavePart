@@ -10,9 +10,9 @@ with open("Model_param.txt", "rb") as fp:
 def Get_function():
     #exported from Behave part II
     windowF={
-            226*40:[Harsh_Turn_Right,Harsh_Turn_Left,Harsh_acceleration],
-            126*40:[Harsh_ChangeLine_Right,Harsh_ChangeLine_Left],
-            186*40:[Harsh_Break]
+            226/2:[Harsh_Turn_Right,Harsh_Turn_Left,Harsh_acceleration],
+            126/2:[Harsh_ChangeLine_Right,Harsh_ChangeLine_Left],
+            186/2:[Harsh_Break]
            }
     return windowF
 
@@ -56,6 +56,8 @@ def ADC_Reader_Windowing(id_,que , df):
 def Event_Handler(id_,que_input,function_pack):
     i=-1
     time.sleep(3)
+    Data='{"driver_id":'+str(id_)+',"started"}'
+    print(Data)
     
     while True: 
         i+=1
